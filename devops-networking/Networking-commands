@@ -1,0 +1,47 @@
+# 🖧 Networking Commands Cheat Sheet
+
+In DevOps, networking commands are essential for troubleshooting, monitoring, and securing systems. Below is a list of commonly used networking commands along with their descriptions and examples.
+
+---
+
+## 1️⃣ **ping** - Check Connectivity
+Used to check whether a remote system is reachable.
+ping google.com
+
+2️⃣ traceroute / tracert - Trace Packet Routes
+Shows the path a packet takes to reach a destination.
+
+Linux/macOS:
+traceroute google.com
+
+Windows:
+tracert google.com
+
+3️⃣ netstat - View Network Statistics
+Displays active network connections and listening ports.
+netstat -tulnp
+-t TCP connections
+-u UDP connections
+-l Listening ports
+-n Show numerical addresses
+-p Show process using the connection
+
+
+4️⃣ curl - Make HTTP Requests
+Used for interacting with web services.
+
+curl -I https://www.example.com
+-I Fetch headers only
+-X Specify HTTP method (GET, POST, PUT, DELETE)
+
+Example:
+curl -X GET https://api.example.com/data
+
+5️⃣ dig / nslookup - DNS Lookup
+Retrieve DNS records for a domain.
+
+Linux/macOS: dig google.com
+Windows: nslookup google.com
+Used to troubleshoot domain name resolution.
+
+
