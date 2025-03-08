@@ -1,0 +1,36 @@
+# AWS EC2 and Security Groups Guide 🚀
+
+## Introduction
+Amazon EC2 (Elastic Compute Cloud) provides scalable cloud computing resources. Security Groups act as virtual firewalls to control inbound and outbound traffic.
+
+This guide walks you through launching an EC2 instance and configuring Security Groups.
+
+---
+
+## Step 1: Launching an AWS EC2 Instance
+1. Log in to the [AWS Management Console](https://aws.amazon.com/).
+2. Go to **EC2 Dashboard** → Click **Launch Instance**.
+3. Select an **Amazon Machine Image (AMI)** (e.g., Amazon Linux, Ubuntu).
+4. Choose an **Instance Type** (Free Tier: `t2.micro`).
+5. Click **Next: Configure Security Group**.
+
+---
+
+## Step 2: Configuring Security Groups
+1. Select **Create a new security group**.
+2. Define **Inbound Rules**:
+   - **SSH (22)** → My IP (for secure access)
+   - **HTTP (80)** → Anywhere (if hosting a web server)
+   - **HTTPS (443)** → Anywhere (for secure traffic)
+3. Define **Outbound Rules** (default: all traffic allowed).
+
+---
+
+## Step 3: Launching the Instance
+1. Click **Review and Launch**.
+2. Select an existing key pair or create a new one.
+3. Click **Launch** and wait for the instance to be ready.
+
+---
+
+
