@@ -1,0 +1,28 @@
+Protocols and Ports for DevOps
+Commonly Used Protocols and Their Port Numbers
+In DevOps workflows, understanding protocols and ports is essential for configuring networks, securing systems, and troubleshooting connectivity issues.
+
+# Network Protocols and Ports
+
+## Application Layer Protocols
+
+| Protocol | Description                         | Port |
+|----------|-------------------------------------|------|
+| **HTTP**  | Web traffic (**unencrypted**)      | 80   |
+| **HTTPS** | Secure web traffic (**TLS/SSL**)   | 443  |
+| **FTP**   | File transfer protocol            | 21   |
+| **SFTP**  | Secure file transfer (over SSH)   | 22   |
+| **SSH**   | Secure shell for remote access    | 22   |
+| **DNS**   | Domain name resolution            | 53   |
+| **SMTP**  | Sending emails                    | 25   |
+| **IMAP**  | Retrieving emails                 | 143  |
+| **POP3**  | Email retrieval (older)           | 110  |
+| **RDP**   | Remote desktop                    | 3389 |
+
+## Transport & Network Layer Protocols
+
+| Protocol | Description                                      | Port |
+|----------|--------------------------------------------------|------|
+| **TCP**  | Connection-oriented communication              | N/A  |
+| **UDP**  | Connectionless, faster but less reliable       | N/A  |
+| **ICMP** | Used for network diagnostics (ping, traceroute) | N/A  
